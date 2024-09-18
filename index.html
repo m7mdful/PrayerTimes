@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="Beige3 amiri-bold-italic">
+    <div class="text-2xl text-center Peach p-3 rounded-b-xl">
+      <h1 class="Beigetext">مواعيد الصلاة</h1>
+    </div>
+    <div class="flex flex-wrap justify-center rounded-xl gap-4 py-10">
+      <div class="flex flex-col Beige2 rounded-2xl justify-center p-5">
+        <img src="./Assets/sunrise.png" class="w-16 h-16" alt="الصباح" />
+        <h1 class="text-center">الصباح</h1>
+        <span class="text-center" id="sbh"></span>
+      </div>
+
+      <div class="flex flex-col Beige2 rounded-2xl justify-center p-5 gap-2">
+        <img src="Assets/sun.png" class="w-14 h-14" alt="" />
+        <h1 class="text-center">الظهر</h1>
+        <span class="text-center" id="dhr"></span>
+      </div>
+
+      <div class="flex flex-col Beige2 rounded-2xl justify-center p-5 gap-2">
+        <img src="Assets/afternoon.png" class="w-16 h-16" alt="" />
+        <h1 class="text-center">العصر</h1>
+        <span class="text-center" id="asor"></span>
+      </div>
+      <div class="flex flex-col Beige2 rounded-2xl justify-center p-5 gap-2">
+        <img src="Assets/sunset.png" class="w-16 h-16" alt="" />
+        <h1 class="text-center">المغرب</h1>
+        <span class="text-center" id="mgrb"></span>
+      </div>
+
+      <div class="flex flex-col Beige2 rounded-2xl justify-center p-5 gap-2">
+        <img src="Assets/crescent-moon.png" class="w-16 h-16" alt="" />
+        <h1 class="text-center">العشاء</h1>
+        <span class="text-center" id="ish"></span>
+      </div>
+    </div>
+
+    <div class="flex flex-col justify-center">
+      <div class="flex flex-row justify-center">
+        <h1 class="Beige1 w-fit p-2 text-center rounded-xl text-xl" id="city"></h1>
+      </div>
+    </div>
+    <script src="./JS/FindMyLocation.js"></script>
+    <script src="./JS/PrayerTime.js"></script>
+  </body>
+</html>
